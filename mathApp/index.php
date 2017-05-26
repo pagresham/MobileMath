@@ -129,17 +129,71 @@ if(isset($_POST['new-user-submit'])) {
   			}
   		}
  	}
-
-
-
 }
-
 
 ?>
 
 
 <body>
 	
+
+	<!-- =========  Start Home Page  ============ -->
+
+	<div data-role="page" class="page" id="home-page">
+		<?PHP
+			mobile_math_header("Mobile Math Home");
+		?>
+		  <div role="main" class="ui-content">
+			<div id="add-start">
+				<div class="quest-header">
+					<h2>Welcome to</h2> <h1><em>Mobile Math</em></h1>
+					<h4>A simple app to practice basic math operations</h4>	
+				</div>
+				<div class="quest-box center">
+					<!-- Example problem -->
+					<div class="ui-grid-a f1-prob icon-container">
+						<div class="icon_block ui-block-a">
+							<div class="add-icon">
+								<a href="#add-page">
+									<img alt="Addition Icon" src="img/add_icon.png">
+								</a>
+							</div>
+						</div>
+						<div class="icon_block ui-block-b">
+							<div class="sub-icon">
+								<a href="#sub-page">
+									<img alt="Subtraction Icon" src="img/sub_icon.png">
+								</a>
+							</div>
+						</div>
+						<div class="icon_block ui-block-a">
+							<div class="mul-icon">
+								<a href="#mul-page">
+									<img alt="Multiplication Icon" src="img/mult_icon.png">
+								</a>
+							</div>
+						</div>
+						<div class="icon_block ui-block-b">
+							<div class="equ-icon">
+								<a href="#div-page">
+									<img alt="Equals Icon, but will lead to Division Page" src="img/equ_icon.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	  	<div data-role="navbar">
+	      	<ul>
+	        	<li><a href="#settings-page" class="ui-btn ui-icon-gear ui-btn-icon-left">Setting</a></li>
+	        	<li><a href="#new-user-page">Users</a></li>
+	      	</ul>
+	    </div>
+	</div>
+
+	<!-- =========  End Home Page  =========== -->
+
 	<!-- =========  Start New User Page ========= -->
 
 	<div data-role='page' class="page" id="new-user-page">
@@ -212,63 +266,8 @@ if(isset($_POST['new-user-submit'])) {
     	</div>
 	</div>
 
+	<!-- ====  End new User Page ===== -->
 
-	<!-- =========  Start Home Page  ============ -->
-
-	<div data-role="page" class="page" id="home-page">
-		<?PHP
-			mobile_math_header("Mobile Math Home");
-		?>
-		  <div role="main" class="ui-content">
-			<div id="add-start">
-				<div class="quest-header">
-					<h2>Welcome to</h2> <h1><em>Mobile Math</em></h1>
-					<h4>A simple app to practice basic math operations</h4>	
-				</div>
-				<div class="quest-box center">
-					<!-- Example problem -->
-					<div class="ui-grid-a f1-prob icon-container">
-						<div class="icon_block ui-block-a">
-							<div class="add-icon">
-								<a href="#add-page">
-									<img alt="Addition Icon" src="img/add_icon.png">
-								</a>
-							</div>
-						</div>
-						<div class="icon_block ui-block-b">
-							<div class="sub-icon">
-								<a href="#sub-page">
-									<img alt="Subtraction Icon" src="img/sub_icon.png">
-								</a>
-							</div>
-						</div>
-						<div class="icon_block ui-block-a">
-							<div class="mul-icon">
-								<a href="#mul-page">
-									<img alt="Multiplication Icon" src="img/mult_icon.png">
-								</a>
-							</div>
-						</div>
-						<div class="icon_block ui-block-b">
-							<div class="equ-icon">
-								<a href="#div-page">
-									<img alt="Equals Icon, but will lead to Division Page" src="img/equ_icon.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-	  	<div data-role="navbar">
-	      	<ul>
-	        	<li><a href="#settings-page" class="ui-btn ui-icon-gear ui-btn-icon-left">Setting</a></li>
-	        	<li><a href="#new-user-page">Users</a></li>
-	      	</ul>
-	    </div>
-	</div>
-
-	<!-- =========  End Home Page  =========== -->
 
 
 	
