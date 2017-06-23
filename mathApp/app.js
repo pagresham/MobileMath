@@ -73,10 +73,11 @@ $(function() {
 
 	$('#start-div').click(function() {
 		document.getElementById('boing').play();
-		roundFinished = false;
+		// roundFinished = false;
 		curOperation = 'div';
 		curOpMax = dMAX;
 		tableMax = dTABLE_MAX;
+		start_add_round() 
 		add_sub_nums(curOpMax);	
 		console.log(curOpMax+"=curOpMax  and  dTABLE_MAX="+dTABLE_MAX)
 	})
@@ -294,7 +295,7 @@ $(function() {
 				}
 				var randomElementNum = parseInt(Math.random()*validAnswers.length);
 				var x = validAnswers[randomElementNum]
-				p = new Prob(x, dTABLE_MAX, (x / dTABLE_MAX)); 
+				var p = new Prob(x, dTABLE_MAX, (x / dTABLE_MAX)); 
 				// console.log(validAnswers);
 			}
 
