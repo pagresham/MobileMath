@@ -1,6 +1,11 @@
 <?PHP
 
+/**
+ * Draws header/toolbar 
+ * @param  String - $title - The text to appear at the top of each page
+ */
 function mobile_math_header($title){
+
 	print "<div data-role='header'>";
 	print "<h1>".$title."</h1>";
 	print "<div data-role='navbar'>
@@ -15,7 +20,12 @@ function mobile_math_header($title){
 	print "</div>"; // End data-role="header"
 } 
 
+/**
+ * Draws UI interface that is present at the top of each operation page
+ * @param  String - $op - operation short
+ */
 function math_controls_top($op) {
+
 	print "<div class='center' data-role='controlgroup'  data-type='horizontal' data-mini='true'>";
 	print "<a href='#".$op."Info' data-rel='popup' data-transition='flip' class='ui-btn ui-btn-inline ui-icon-info ui-btn-icon-notext ui-corner-all ui-shadow'>Info</a>";
 	print "<div data-role='popup' id='".$op."Info' class='center'>
