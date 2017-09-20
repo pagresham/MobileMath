@@ -15,3 +15,5 @@ This project is an effort to create an application that my kids can use to work 
   * Integrate user rewards and persistent scores
 * User Login
   * Finish new user accound and login dialogs 
+* Convert log in to OOP script
+
